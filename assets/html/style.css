@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Pixel - Absolute Unit */
+
+h1 {
+    font-size: 50px;
+}
+
+/* für rem angepasst*/
+html {
+    font-size: 16px;
+}
+
+/*
+    relative Units -
+    em, rem, vh, vw, %
+*/
+
+/* em bezieht sich auf parent element */
+
+article {
+    font-size: 10px;
+
+}
+
+article p {
+    font-size: 2em;
+}
+article p span {
+    font-size: 2em;
+}
+
+/* rem bezieht sich auf das root element */
+/* section p {
+    font-size: 2rem;
+} */
+section {
+    font-size: 1rem;
+}
+section p:first-of-type{
+    font-size: 3em;
+
+}
+section p:nth-of-type(2){
+    font-size: 1.5em;
+    
+}
+section p:last-of-type{
+    font-size: 0.5em;
+    
+}
+
+/* vh bezieht sich auf die Browserhöhe */
+header{
+    height: 100vh;
+    background-color: bisque;
+}
+
+.first {
+    background-color: pink;
+    height: 10vh;
+}
+
+.second {
+    background-color: blueviolet;
+    height: 50vh;
+}
+
+.third {
+    background-color: brown;
+    height: 40vh;
+}
+
+/* vw bezieht sich auf viewportbreite*/
+footer {
+    height: 20px;
+    padding: 50px;
+    background-color: yellow;
+}
+.fourth {
+    background-color: purple;
+    height: 10px;
+    /* width: 100vw; */
+}
+.fifth {
+    background-color: blue;
+    width: 40vw;
+    height: 10px;
+    margin: 0 auto;
+}
+
+/* % bezieht sich auf  das Parent element */
+
+.imageSection {
+    background-color: brown;
+    width: 50%;
+}
+
+.imageSection img:nth-of-type(1) {
+    width: 50%;
+}
+.imageSection img:nth-of-type(2) {
+    width: 75%;
+}
+.imageSection img:nth-of-type(3) {
+    width: 20%;
+}
+
+.imageSection h2 {
+    width: 20%;
+}
